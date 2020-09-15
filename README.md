@@ -1,6 +1,6 @@
 # Learn Terraform Modules
 
-Module that references other modules:
+Root/Parent module that references other modules that are in:
 
 - public registry
 - github
