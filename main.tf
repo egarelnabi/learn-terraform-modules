@@ -37,14 +37,14 @@ module "ec2_instances" {
     Environment = "dev"
   }
 }
-/*
+
 module "website_s3_bucket" {
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "<UNIQUE BUCKET NAME>"
+  bucket_name = "eyad-15092020"
 
   tags = {
     Terraform   = "true"
     Environment = "dev"
   }
-} */
+} 
