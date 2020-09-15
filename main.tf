@@ -1,8 +1,11 @@
 # Terraform configuration
-
+/*
 provider "aws" {
   region = "us-west-2"
 }
+*/
+
+resource "aws_parent_module" "parent_module" {
 
 module "vpc" {
   source  = "git::https://github.com/egarelnabi/terraform-aws-vpc.git?ref=v2.21.0"
@@ -48,3 +51,4 @@ module "website_s3_bucket" {
     Environment = "dev"
   }
 } 
+ }
