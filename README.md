@@ -1,5 +1,9 @@
 # Learn Terraform Modules
 
-Learn what Terraform modules are and when to use them.
+Module that references other modules:
 
-Follow along with the [Learn guide](https://learn.hashicorp.com/terraform/modules/modules-overview) at HashiCorp Learn.
+- public registry
+- github
+- child module
+
+https://github.com/egarelnabi/learn-module-caller
