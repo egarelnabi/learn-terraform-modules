@@ -25,7 +25,7 @@ module "vpc" {
  */
     
   module "vpc" {
-  source  = "./terraform-aws-vpc"
+  source  = "../terraform-aws-vpc"
   //version = "2.21.0"
 
   name = var.vpc_name
