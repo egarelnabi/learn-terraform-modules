@@ -6,9 +6,26 @@ provider "aws" {
 */
 
 
-
+/*
 module "vpc" {
   source  = "git::https://github.com/egarelnabi/terraform-aws-vpc.git?ref=v2.21.0"
+  //version = "2.21.0"
+
+  name = var.vpc_name
+  cidr = var.vpc_cidr
+
+  azs             = var.vpc_azs
+  private_subnets = var.vpc_private_subnets
+  public_subnets  = var.vpc_public_subnets
+
+  enable_nat_gateway = var.vpc_enable_nat_gateway
+
+  tags = var.vpc_tags
+}
+ */
+    
+  module "vpc" {
+  source  = "./terraform-aws-vpc"
   //version = "2.21.0"
 
   name = var.vpc_name
